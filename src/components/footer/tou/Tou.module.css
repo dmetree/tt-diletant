@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'ProximaNovaRg';
+    src: url('../../../assets/fonts/ProximaNova-Regular.woff') format('woff'), url('../../../assets/fonts/ProximaNova-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.tou {
+    padding: 20px 5vw;
+    width: 90vw;
+}
+
+.row1, .row2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row2 {
+    align-items: flex-end;
+}
+
+.reg, .chief {
+    color: #ffffff;
+    font-family: 'ProximaNovaRg';
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.chief {
+    margin-top: 11px;
+}
+
+.row1_ageControl {
+    display: none;
+}
+
+.row2_ageControl {
+    display: block;
+}
+
+@media only screen and (min-width: 1024px) {
+    .row2_ageControl {
+        display: none;
+    }
+    .row1_ageControl {
+        display: block;
+    }
+    .reg {
+        width: 75vw;
+    }
+    .tou {
+        padding: 40px 5vw;
+    }
+}
+@media only screen and (min-width: 1440px) {
+    .tou {
+        display: flex;
+        align-self: center;
+        flex-direction: column;
+        width: 70vw;
+        margin: 0 auto;
+    }
+}
+    

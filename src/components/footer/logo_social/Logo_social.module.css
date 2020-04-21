@@ -1,0 +1,36 @@
+.social {
+    padding: 70px 20px 60px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #ffffff;
+    border-top: 1px solid #ffffff;
+}
+
+.logo {
+    margin-bottom: 40px;
+}
+
+.social_label {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.social_net {
+    margin: 7px;
+}
+
+@media only screen and (min-width: 1440px) {
+    .social {
+        padding: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid #ffffff;
+        border-top: none;
+    }
+}

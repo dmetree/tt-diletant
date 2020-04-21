@@ -1,0 +1,109 @@
+.container, .container_2 {
+    display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+    .mobile_only {
+        display: none;
+    }
+    .item_1_row_1 {
+        grid-area: i1_r1;
+    }
+    .item_2_row_1 {
+        display: none;
+    }
+    .item_3_row_1 {
+        grid-area: i3_r1;
+    }
+    .item_1_row_2 {
+        grid-area: i1_r2;
+    }
+    .item_2_row_2 {
+        grid-area: i2_r2;
+    }
+    .item_3_row_2 {
+        grid-area: i3_r2;
+    }
+    .item_4_row_2 {
+        display: none;
+    }
+    .container {
+        display: grid;
+        grid-template-areas: 'i1_r1 i3_r1 i3_r1' 'i1_r2 i2_r2 i3_r2';
+        grid-gap: 40px 20px;
+        margin: 50px 5vw 50px;
+        justify-content: space-between;
+    }
+    .c2_item_1_row_1 {
+        grid-area: i1_r1;
+    }
+    .c2_item_2_row_1 {
+        grid-area: i2_r1;
+    }
+    .c2_item_3_row_1 {
+        grid-area: i3_r1;
+    }
+    .c2_item_4_row_1 {
+        display: none;
+    }
+    .container_2 {
+        display: grid;
+        grid-template-areas: 'i1_r1 i2_r1 i3_r1';
+        grid-gap: 40px 20px;
+        margin: 90px 5vw 20px;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .item_1_row_1 {
+        grid-area: i1_r1;
+    }
+    .item_2_row_1 {
+        grid-area: i2_r1;
+        display: flex;
+    }
+    .item_3_row_1 {
+        grid-area: i3_r1;
+    }
+    .item_1_row_2 {
+        grid-area: i1_r2;
+    }
+    .item_2_row_2 {
+        grid-area: i2_r2;
+    }
+    .item_3_row_2 {
+        grid-area: i3_r2;
+    }
+    .item_4_row_2 {
+        grid-area: i4_r2;
+        display: flex;
+    }
+    .container {
+        display: grid;
+        grid-template-areas: 'i1_r1 i2_r1 i3_r1 i3_r1' 'i1_r2 i2_r2 i3_r2 i4_r2';
+        grid-gap: 40px 20px;
+        margin: 50px 5vw 70px;
+        justify-content: space-between;
+    }
+    .c2_item_1_row_1 {
+        grid-area: i1_r1;
+    }
+    .c2_item_2_row_1 {
+        grid-area: i2_r1;
+    }
+    .c2_item_3_row_1 {
+        grid-area: i3_r1;
+    }
+    .c2_item_4_row_1 {
+        grid-area: i4_r1;
+        display: flex;
+    }
+    .container_2 {
+        display: grid;
+        grid-template-areas: 'i1_r1 i2_r1 i3_r1 i4_r1';
+        grid-gap: 40px 20px;
+        margin: 50px 5vw 20px;
+        justify-content: space-between;
+    }
+}

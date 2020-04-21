@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'ProximaNovaSemibold';
+    src: url('../../../assets/fonts/ProximaNova-Semibold.woff') format('woff'), url('../../../assets/fonts/ProximaNova-Semibold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProximaNovaRg';
+    src: url('../../../assets/fonts/ProximaNova-Regular.woff') format('woff'), url('../../../assets/fonts/ProximaNova-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.sitemap {
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ffffff;
+}
+
+.prox_n_caps_h3 {
+    color: #ffffff;
+    margin: 15px 0;
+    font-family: 'ProximaNovaSemibold';
+}
+
+.col_item {
+    color: #ffffff;
+    margin: 7px 0;
+    display: flex;
+    align-items: center;
+    font-family: 'ProximaNovaRg';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    cursor: pointer;
+}
+
+.sitemap_email {
+    font-family: 'ProximaNovaRg';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: none;
+}
+
+.books, .page, .crown, .book {
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+}
+
+.col_1, .col_2, .col_3 {
+    width: 45%;
+    margin: 0 2%;
+}
+
+.col_0 {
+    display: none;
+}
+
+.col_3_item {
+    margin: 7px 0;
+}
+
+.col_item_label {
+    color: #ffffff;
+    font-family: 'ProximaNovaRg';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+@media only screen and (min-width: 600px) {
+    .sitemap {
+        justify-content: center;
+    }
+    .col_1, .col_2, .col_3 {
+        width: 20%;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .col_0 {
+        display: flex;
+        width: 25%;
+        margin: 0 2%;
+    }
+    .col_1, .col_2, .col_3 {
+        width: 12%;
+    }
+    .sitemap {
+        border-top: 1px solid #ffffff;
+        padding-top: 80px;
+    }
+}

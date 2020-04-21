@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'ProximaNovaSemibold';
+    src: url('../../assets/fonts/ProximaNova-Semibold.woff') format('woff'), url('../../assets/fonts/ProximaNova-Semibold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+.filter {
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.filterwrapper {
+    height: 50px;
+    margin: 26px 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter_elements {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filterDrop {
+    padding: 6px 25px;
+    border: 1px solid #556274;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.filterLabel {
+    margin-right: 10px;
+    font-family: 'ProximaNovaSemibold';
+}
+
+.dropDownImg {
+    margin-bottom: 3px;
+}
+
+.filterRight:last-child {
+    display: none;
+    background: pink;
+}
+
+.filter_new, .filters_1024 {
+    display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+    .filter {
+        background-color: #202326;
+    }
+    .filterwrapper {
+        height: 70px;
+        margin: 70px 5vw 60px;
+        border-radius: 12px;
+        background-color: #FFFFFF;
+    }
+    .filter_elements {
+        margin: 0 32px;
+    }
+    .filterImg {
+        display: none;
+    }
+    .filters_1024 {
+        display: flex;
+        align-items: center;
+    }
+    .filterRight {
+        display: flex;
+    }
+    .filterFirstItem {
+        border: none;
+    }
+    .filterFirstItemLabel{
+        margin-right: -10px;
+    }
+    .filterFirstItemImg {
+        display: none;
+    }
+    .filter_new {
+        display: flex;
+        background-color: #556274;
+    }
+    .filterLabelNew {
+        color: #FFFFFF;
+    }
+}

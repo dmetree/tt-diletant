@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'ProximaNovaSemibold';
+    src: url('../../../assets/fonts/ProximaNova-Semibold.woff') format('woff'), url('../../../assets/fonts/ProximaNova-Semibold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+.misprint {
+    display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+    .misprint {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid #ffffff;
+    }
+    .misprintLabel {
+        margin: 30px 0;
+        font-family: 'ProximaNovaSemibold';
+        font-size: 18px;
+        line-height: 24px;
+        color: #ffffff;
+        text-align: center;
+    }
+}

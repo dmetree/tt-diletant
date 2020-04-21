@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #202326;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+p {
+  font-family: 'Spectral-regular';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 130%;
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: 'Spectral-regular';
+  src: url('../src/assets/fonts/Spectral-Regular.woff') format('woff'), url('../src/assets/fonts/Spectral-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "Spectral-Italic";
+  font-size: 16px;
+  color: #556274;
+}
+
+h3 {
+  font-family: "Spectral-Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 25px;
+  color: #272B2F;
+}
+
+@font-face {
+  font-family: "Spectral-Bold";
+  src: url('../src/assets/fonts/Spectral-ExtraBold.woff') format('woff'), url('../src/assets/fonts/Spectral-ExtraBold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/*
+  search q //
+  font-family: Spectral;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 16px;
+
+  ================  
+
+  X out of XXX //
+  font-family: Proxima Nova;
+  font-size: 12px;
+  color: #B0B0B0;
+
+
+  footer headers // мы в соц сетях // больше материалов
+  font-family: Proxima Nova;
+  font-weight: bold;
+  font-size: 16px;
+
+
+
+  footer nav // header - сортировка
+  font-family: Proxima Nova;
+  font-size: 14px;
+
+  footer TOU // Card tags
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+
+
+p {}
+
+*/
+
+a {
+  color: #A07D46;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:active {
+  color: brown;
+}
+
+a:focus {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
