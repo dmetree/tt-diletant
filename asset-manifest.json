@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/tt-diletant/static/css/main.0175e4bc.chunk.css",
+    "main.css": "/tt-diletant/static/css/main.b73f23c4.chunk.css",
     "main.js": "/tt-diletant/static/js/main.acefeaff.chunk.js",
     "main.js.map": "/tt-diletant/static/js/main.acefeaff.chunk.js.map",
     "runtime-main.js": "/tt-diletant/static/js/runtime-main.f4966cf9.js",
@@ -8,9 +8,9 @@
     "static/js/2.3b0f881a.chunk.js": "/tt-diletant/static/js/2.3b0f881a.chunk.js",
     "static/js/2.3b0f881a.chunk.js.map": "/tt-diletant/static/js/2.3b0f881a.chunk.js.map",
     "index.html": "/tt-diletant/index.html",
-    "precache-manifest.ceb854096ce279865796e6a43e74bf98.js": "/tt-diletant/precache-manifest.ceb854096ce279865796e6a43e74bf98.js",
+    "precache-manifest.2758fe799f03c9ed7c0eecb84b933b88.js": "/tt-diletant/precache-manifest.2758fe799f03c9ed7c0eecb84b933b88.js",
     "service-worker.js": "/tt-diletant/service-worker.js",
-    "static/css/main.0175e4bc.chunk.css.map": "/tt-diletant/static/css/main.0175e4bc.chunk.css.map",
+    "static/css/main.b73f23c4.chunk.css.map": "/tt-diletant/static/css/main.b73f23c4.chunk.css.map",
     "static/js/2.3b0f881a.chunk.js.LICENSE.txt": "/tt-diletant/static/js/2.3b0f881a.chunk.js.LICENSE.txt",
     "static/media/12+.svg": "/tt-diletant/static/media/12+.4515ec17.svg",
     "static/media/FB.svg": "/tt-diletant/static/media/FB.a00b825a.svg",
@@ -34,7 +34,7 @@
   "entrypoints": [
     "static/js/runtime-main.f4966cf9.js",
     "static/js/2.3b0f881a.chunk.js",
-    "static/css/main.0175e4bc.chunk.css",
+    "static/css/main.b73f23c4.chunk.css",
     "static/js/main.acefeaff.chunk.js"
   ]
 }
