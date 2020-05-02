@@ -1,145 +1,86 @@
 import React, { Component } from 'react'
 
-import ArticleWhite from './article_white/ArticleWhite'
-import ArticleBlack from './article_black/ArticleBlack'
+import { connect } from 'react-redux'
+
 import CardStats from './cardStats/CardStats'
 import Advs from './advs/Advs'
-
 import GridItem from './gridItem/GridItem'
-
-
 import s from './ArticlesGrid.module.css'
 
 
 class ArticlesGrid extends Component {
 
 
+
+
     render() {
+        let articles = this.props.articles;
+        let search = this.props.search; 
+        let what = this.props.whatFilter;
+        let when = this.props.whenFilter;
+        let where = this.props.whereFilter;
+
+
+        let filterBySearch = articles.filter(article => {
+            return article.title.toLowerCase().includes(search.toLowerCase());
+        })
+
+        let filteredByWhat = filterBySearch.filter(article => {
+            return article.tag1.toLowerCase().includes(what.toLowerCase());
+        });
+        let filteredByWhere = filteredByWhat.filter(article => {
+            return article.tag2.toLowerCase().includes(when.toLowerCase());
+        });
+        let filteredByWhen = filteredByWhere.filter(article => {
+            return article.tag3.toLowerCase().includes(where.toLowerCase());
+        });
+
         return (
             <div>
-                <div className={s.container}>
-                    <div className={s.item_1_row_1}>
-                        <GridItem
-                            tag1="СТАТЬИ"
-                            tag2="НОВЕЙШЕЕ ВРЕМЯ"
-                            tag3="ЕВРОПА"
-                            title="Вытрезвитель — кошмар пролетария"
-                            bgImg="url(https://i.ibb.co/pRbJLQz/img-2.png)"
-                        />
-                    </div>
-                    <div className={s.item_2_row_1}>
-                        <GridItem
-                            tag1="СТАТЬИ"
-                            tag2="СРЕДНИЕ ВЕКА"
-                            tag3="ЕВРОПА"
-                            title="Кристина Шведская: королева, промотавшая королевство"
-                            bgImg="url(https://i.ibb.co/YLk3Jtt/img-7.png)"
-                        />
-                    </div>
-                    <div className={s.item_3_row_1}>
-                        <GridItem
-                            tag1="СТАТЬИ"
-                            tag2="СРЕДНИЕ ВЕКА"
-                            tag3="ЕВРОПА"
-                            title="Как Ельцин хотел забрать Крым"
-                            bgImg="url(https://i.ibb.co/Pz1hjB5/img-4.png)"
+                <div className={s.article_wrapper}>
+                    <div className={s.container}>
 
-                            s_1="100%"
-                            s_2="flex-start"
-                            s_2_2="0"
-                            s_3="20px"
-                            s_4="0 auto"
-                            s_SeparatorW="235px"
-                            s_SeparatorH="15px"
-                            sTitle_1="30px"
-                        />
-                    </div>
-                    <div className={s.item_1_row_2}>
-                        <GridItem
-                            tag1="ТЕСТЫ"
-                            tag2="НОВОЕ ВРЕМЯ"
-                            tag3="АЗИЯ"
-                            title="Гражданская война в Камбодже"
-                            bgImg="url(https://i.ibb.co/KLwkxCF/img-5.png)"
-                        />
-                    </div>
-                    <div className={s.item_2_row_2}>
-                        <ArticleWhite></ArticleWhite>
-                    </div>
+                        {filteredByWhen.map(article => {
+                            return <GridItem
+                                key={article.id}
+                                tag1={article.tag1}
+                                tag2={article.tag2}
+                                tag3={article.tag3}
+                                title={article.title}
+                                bgImg={article.bgImg}
 
-                    <div className={s.item_3_row_2}>
-                        <GridItem
-                            tag1="ЕГЭ"
-                            tag2="XII ВЕК"
-                            tag3="ЮЖНАЯ АМЕРИКА"
-                            title="Инки, майя или ацтеки?"
-                            bgImg="url(https://i.ibb.co/NnTvzw0/img-6.png.jpg)"
-                        />
-                    </div>
-
-                    <div className={s.item_4_row_2}>
-                        <GridItem
-                            tag1="Тесты"
-                            tag2="Новое время"
-                            tag3="АЗИЯ"
-                            title="Гражданская война в Камбодже"
-                            bgImg="url(https://i.ibb.co/KLwkxCF/img-5.png)"
-                        />
+                                s_width={article.s_width}
+                                s_flex={article.s_flex}
+                                s_0={article.s_0}
+                                s_20={article.s_20}
+                                s_margin={article.s_margin}
+                                s_SeparatorW={article.s_SeparatorW}
+                                s_SeparatorH={article.s_SeparatorH}
+                                s_fontH3={article.s_fontH3}
+                            />
+                        })}
                     </div>
                 </div>
 
-                <div className={s.mobile_only}>
-                    <ArticleWhite />
-                    <ArticleBlack />
-                    <ArticleWhite />
-                </div>
-                
-                <Advs></Advs>
-
-
-                <div className={s.container_2}>
-                    <div className={s.c2_item_1_row_1}>
-                        <GridItem
-                            tag1="ТЕСТЫ"
-                            tag2="НОВОЕ ВРЕМЯ"
-                            tag3="АЗИЯ"
-                            title="Гражданская война в Камбодже"
-                            bgImg="url(https://i.ibb.co/KLwkxCF/img-5.png)"
-                        />
-                    </div>
-                    <div className={s.c2_item_2_row_1}>
-                        <ArticleWhite></ArticleWhite>
-                    </div>
-                    <div className={s.c2_item_3_row_1}>
-                        <GridItem
-                            tag1="ЕГЭ"
-                            tag2="XII ВЕК"
-                            tag3="ЮЖНАЯ АМЕРИКА"
-                            title="Инки, майя или ацтеки?"
-                            bgImg="url(https://i.ibb.co/NnTvzw0/img-6.png.jpg)"
-                        />
-                    </div>
-                    <div className={s.c2_item_4_row_1}>
-                        <GridItem
-                            tag1="Тесты"
-                            tag2="Новое время"
-                            tag3="АЗИЯ"
-                            title="Гражданская война в Камбодже"
-                            bgImg="url(https://i.ibb.co/KLwkxCF/img-5.png)"
-                        />
-                    </div>
-                </div>
-                <div className={s.mobile_only}>
-                    <ArticleWhite/>
-                    <ArticleBlack/>
-                    <ArticleWhite/>
-                </div>
 
                 <CardStats></CardStats>
+                <Advs></Advs>
+
 
             </div>
         )
     }
 }
 
-export default ArticlesGrid
+const mapStateToProps = state => {
+    return {
+        search: state.search,
+        articles: state.articles,
+        whatFilter: state.filterWhat,
+        whenFilter: state.filterWhen,
+        whereFilter: state.filterWhere
+    };
+};
+
+
+export default connect(mapStateToProps)(ArticlesGrid);

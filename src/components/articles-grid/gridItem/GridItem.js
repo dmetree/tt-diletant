@@ -9,9 +9,9 @@ function Article_1024_1(props) {
 
     return (
         <div>
-            <div className={s.card} style={{width: props.s_1}}>
-                <div className={s.img_bg} style={{ backgroundImage: props.bgImg, alignItems: props.s_2, padding: props.s_2_2 }}>
-                    <div className={s.paramsList} style={{ padding: props.s_3 }}>
+            <div className={s.card} style={{width: props.s_width}}>
+                <div className={s.img_bg} style={{ backgroundImage: props.bgImg, alignItems: props.s_flex, padding: props.s_0 }}>
+                    <div className={s.paramsList} style={{ padding: props.s_20 }}>
                         <div className={s.param}>
                             <div className={s.param_label}>{props.tag1}</div>
                         </div>
@@ -22,9 +22,9 @@ function Article_1024_1(props) {
                             <div className={s.param_label}>{props.tag3}</div>
                         </div>
                     </div>
-                    <div className={s.content} style={{margin: props.s_4}}> 
+                    <div className={s.content} style={{ margin: props.s_margin}}> 
                         <img className={s.separator} src={Separator} style={{ width: props.s_SeparatorW, heigth: props.s_SeparatorH }}alt={"separator"} />
-                        <h3 className={s.cardTitle} style={{ fontSize:props.sTitle_1 }}>{props.title}</h3>
+                        <h3 className={s.cardTitle} style={{ fontSize: props.s_fontH3 }}>{props.title}</h3>
                     </div>
 
                 </div>

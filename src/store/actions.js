@@ -1,0 +1,6 @@
+
+export const FILTER_BY_VALUE = 'FILTER_BY_VALUE';
+
+export const FILTER_BY_WHAT = 'FILTER_BY_WHAT';
+export const FILTER_BY_WHERE = 'FILTER_BY_WHERE';
+export const FILTER_BY_WHEN = 'FILTER_BY_WHEN';

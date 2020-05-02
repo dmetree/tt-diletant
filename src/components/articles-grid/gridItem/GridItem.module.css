@@ -10,6 +10,7 @@
     height: 400px;
     overflow: hidden;
     border-radius: 12px;
+    margin: 10px;
 }
 
 .img_bg {
@@ -25,7 +26,6 @@
 }
 
 .content {
-    /* padding: 0 20px 20px 20px; */
     padding: 0 20px 50px 20px;
     color: #FFFFFF;
     text-align: center;

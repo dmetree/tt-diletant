@@ -10,7 +10,7 @@ import s from './App.module.css';
 function App() {
   return (
     <div className={s.App}>
-        <Search></Search>
+        <Search />
         <Filter></Filter>
         <ArticlesGrid></ArticlesGrid>
         <Footer></Footer>
