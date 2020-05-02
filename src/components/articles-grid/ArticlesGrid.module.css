@@ -8,5 +8,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-   
+}
+
+@media only screen and (max-width: 695px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
 }

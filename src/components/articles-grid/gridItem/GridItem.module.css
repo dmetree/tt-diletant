@@ -82,3 +82,9 @@
 .content_black {
     margin: 0;
 }
+
+@media only screen and (max-width: 695px) {
+    .card {
+        width: 300px !important;
+    }
+}
