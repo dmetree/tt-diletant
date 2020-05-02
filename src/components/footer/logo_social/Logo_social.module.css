@@ -18,6 +18,10 @@
     margin-bottom: 10px;
 }
 
+.social_nets{
+    display: flex;
+}
+
 .social_net {
     margin: 7px;
 }
