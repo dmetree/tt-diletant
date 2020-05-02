@@ -1,5 +1,6 @@
 
 export const FILTER_BY_VALUE = 'FILTER_BY_VALUE';
+export const CLEAR_SEARCH = 'CLEAR_SEARCH';
 
 export const FILTER_BY_WHAT = 'FILTER_BY_WHAT';
 export const FILTER_BY_WHERE = 'FILTER_BY_WHERE';

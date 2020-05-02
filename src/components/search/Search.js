@@ -11,7 +11,6 @@ class Search extends Component {
 
 
     render() {
-        // console.log(this.props.searchQ);
         return (
             <div className={s.componentSearch}>
                 <div className={s.search}>
@@ -21,7 +20,7 @@ class Search extends Component {
                         onChange={this.props.newSearch}
                     />
 
-                    <img className={s.closeimg} src={close} alt={"close"} onClick />
+                    <img className={s.closeimg} src={close} alt={"close"} onClick={this.props.clearSearch} />
                 </div>
             </div>
         )
@@ -38,6 +37,9 @@ const mapDispatchToProps = dispatch => {
     return {
         newSearch: (e) => {
             dispatch({ type: actionTypes.FILTER_BY_VALUE, text: e.target.value });
+        },
+        clearSearch: () => {
+            dispatch({type: actionTypes.CLEAR_SEARCH, })
         }
     }
 }
