@@ -30,7 +30,7 @@ class Filter extends Component {
 
                         <div className={s.filters_1024}>
                             <div className={s.filterDrop}>
-                                {console.log()}
+                                
                                 <select className={s.filterLabel}
                                     onChange={this.props.selectWhatValue}>
                                     <option value="">Все</option>
@@ -70,11 +70,6 @@ class Filter extends Component {
     }
 }
 
-const mapStateToProps = state => {
-    return{
-        whatValue: state.filterWhat
-    }
-}
 
 const mapDispatchToProps = dispatch => {
     return {
@@ -90,4 +85,4 @@ const mapDispatchToProps = dispatch => {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Filter)
+export default connect(null, mapDispatchToProps)(Filter)

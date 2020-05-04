@@ -1,5 +1,7 @@
 import * as actionTypes from './actions';
 
+
+
 const initialState = {
     search: '',
     filterWhat: '',
@@ -13,7 +15,7 @@ const initialState = {
             tag2: "НОВЕЙШЕЕ ВРЕМЯ",
             tag3: "ЕВРОПА",
             title: "Вытрезвитель — кошмар пролетария",
-            bgImg: "url(https://i.ibb.co/pRbJLQz/img-2.png)"
+            bgImg: "url(https://i.ibb.co/s9YN8Zw/img-2.png)"
         },
         {
             id: 2,
@@ -21,15 +23,15 @@ const initialState = {
             tag2: "СРЕДНИЕ ВЕКА",
             tag3: "ЕВРОПА",
             title: "Кристина Шведская: королева, промотавшая королевство",
-            bgImg: "url(https://i.ibb.co/YLk3Jtt/img-7.png)"
+            bgImg: "url(https://i.ibb.co/MGx7rFK/img-7.png)"
         },
         {
             id: 3,
             tag1: "СТАТЬИ",
             tag2: "СРЕДНИЕ ВЕКА",
             tag3: "ЕВРОПА",
-            title: "Как Ельцин хотел забрать Крым",
-            bgImg: "url(https://i.ibb.co/Pz1hjB5/img-4.png)",
+            title: "Ельцин хотел забрать?",
+            bgImg: "url(https://i.ibb.co/BtN56gz/img-4.png)",
 
             s_width: "620px",
             s_flex: "flex-start",
@@ -46,7 +48,7 @@ const initialState = {
             tag2: "АЗИЯ",
             tag3: "ЕВРОПА",
             title: "Гражданская война в Камбодже",
-            bgImg: "url(https://i.ibb.co/KLwkxCF/img-5.png)"
+            bgImg: "url(https://i.ibb.co/6HXnMQB/img-5.png)"
         },
 
         {
@@ -55,7 +57,7 @@ const initialState = {
             tag2: "12010",
             tag3: "15 минут",
             title: "Машина времени",
-            bgImg: "url(https://i.ibb.co/TbRfK76/img-1.png)",
+            bgImg: "url(https://i.ibb.co/PQB1vWB/img-1.png)",
 
             s_height: "50%",
             p: "В истории немало знаковых, переломных и важных годов. И немало людей, которые с удовольствием отправились бы в прошлое, если бы могли."
@@ -67,7 +69,7 @@ const initialState = {
             tag2: "XII ВЕК",
             tag3: "ЮЖНАЯ АМЕРИКА",
             title: "Инки, майя или ацтеки?",
-            bgImg: "url(https://i.ibb.co/NnTvzw0/img-6.png.jpg)"
+            bgImg: "url(https://i.ibb.co/K5yn10F/img-6.png)"
         },
 
         {
@@ -76,7 +78,7 @@ const initialState = {
             tag2: "BC",
             tag3: "АЗИЯ",
             title: "Гражданская война в Камбодже",
-            bgImg: "url(https://i.ibb.co/KLwkxCF/img-5.png)"
+            bgImg: "url(https://i.ibb.co/6HXnMQB/img-5.png)"
         },
         {
             id: 8,
@@ -84,7 +86,7 @@ const initialState = {
             tag2: "АЗИЯ",
             tag3: "ЕВРОПА",
             title: "Гражданская война в Камбодже",
-            bgImg: "url(https://i.ibb.co/KLwkxCF/img-5.png)"
+            bgImg: "url(https://i.ibb.co/6HXnMQB/img-5.png)"
         },
         {
             id: 9,
@@ -92,7 +94,7 @@ const initialState = {
             tag2: "BC",
             tag3: "ЮЖНАЯ АМЕРИКА",
             title: "Инки, майя или ацтеки?",
-            bgImg: "url(https://i.ibb.co/NnTvzw0/img-6.png.jpg)"
+            bgImg: "url(https://i.ibb.co/K5yn10F/img-6.png)"
         },
         {
             id: 10,
@@ -100,7 +102,7 @@ const initialState = {
             tag2: "Middleages",
             tag3: "АФРИКА",
             title: "Яунде, Дуала или Лимбе?",
-            bgImg: "url(https://i.ibb.co/NnTvzw0/img-6.png.jpg)"
+            bgImg: "url(https://i.ibb.co/K5yn10F/img-6.png)"
         },
 
     ],
