@@ -121,7 +121,10 @@ const reducer = (state = initialState, action) => {
         case actionTypes.CLEAR_SEARCH:
             return {
                 ...state,
-                search: action.search = ""
+                search: action.search = "",
+                filterWhat: '',
+                filterWhen: '',
+                filterWhere: '',
             }
 
         case actionTypes.FILTER_BY_WHAT:
