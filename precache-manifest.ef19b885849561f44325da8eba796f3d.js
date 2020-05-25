@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2be67d9663d3ae2f2dedf98c7c842ecd",
+    "revision": "fee76f60ad041a7c13dcb1192fec4edb",
     "url": "/tt-diletant/index.html"
   },
   {
-    "revision": "ed21dc98db34539a8a86",
-    "url": "/tt-diletant/static/css/main.0a437488.chunk.css"
+    "revision": "9a1c45b0cc1d22f28778",
+    "url": "/tt-diletant/static/css/main.642af440.chunk.css"
   },
   {
     "revision": "e4aed568d6af3333a785",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/tt-diletant/static/js/2.939f9422.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ed21dc98db34539a8a86",
+    "revision": "9a1c45b0cc1d22f28778",
     "url": "/tt-diletant/static/js/main.ccb81fea.chunk.js"
   },
   {
