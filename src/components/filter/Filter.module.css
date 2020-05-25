@@ -37,9 +37,14 @@
 }
 
 .filterLabel {
-    margin-right: 10px;
+    padding-right: 10px;
     font-family: 'ProximaNovaSemibold';
+    font-size: 16px;
     outline: none;
+    border: none;
+    -webkit-appearance: none;
+    background-color: transparent;
+    
 }
 
 .dropDownImg {
@@ -81,7 +86,7 @@
     .filterFirstItem {
         border: none;
     }
-    .filterFirstItemLabel{
+    .filterFirstItemLabel {
         margin-right: -10px;
     }
     .filterFirstItemImg {

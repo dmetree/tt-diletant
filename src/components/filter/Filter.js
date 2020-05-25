@@ -29,6 +29,7 @@ class Filter extends Component {
 
 
                         <div className={s.filters_1024}>
+
                             <div className={s.filterDrop}>
                                 
                                 <select className={s.filterLabel}
@@ -39,7 +40,8 @@ class Filter extends Component {
                                     <option value="Сборники">Сборники</option>
                                 </select>
                                 <img className={s.dropDownImg} src={dropDown} alt={"dropdown"} />
-                            </div>
+                            </div> 
+                            
                             <div className={s.filterDrop}>
 
                                 <select className={s.filterLabel}
